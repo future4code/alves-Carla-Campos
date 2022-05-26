@@ -1,0 +1,36 @@
+header { 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+    color: aliceblue(221, 208, 194);
+    background-color: rgba(31, 136, 122, 0.157);
+    margin: 2% ;
+    border: solid ;
+    border-color: rgba(221, 208, 194);
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    box-shadow: 10px 10px 10pxrgba(0, 0, 0, 0.16);
+    padding: 3%;
+    background-color: rgba(31, 136, 122, 0.714);
+    color: rgba(221, 208, 194);
+    border: solid;
+    border-color: rgba(221, 208, 194);
+}
+a{ 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
+    padding: 4%;
+    background-color: rgba(31, 136, 122, 0.157);
+    margin-left: 2%;
+    border: solid;
+    border-radius: 5px;
+    border-color: rgba(221, 208, 194);
+    color: rgba(221, 208, 194);
+    text-decoration-line: none;
+}
+main {
+    
+
+
+
+}
