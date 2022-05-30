@@ -10,9 +10,9 @@ header {
 }
 
 body {
-    box-shadow: 10px 10px 10pxrgba(0, 0, 0, 0.16);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.16);
     padding: 3%;
-    background-color: rgba(31, 136, 122, 0.714);
+    background-color: rgba(7, 8, 8, 0.714);
     color: rgba(221, 208, 194);
     border: solid;
     border-color: rgba(221, 208, 194);
