@@ -45,25 +45,24 @@ class Post extends React.Component {
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
-    numeroComentarios: 0
+    numeroComentarios: 0,
   }
 
   onClickCurtida = () => {
     this.setState ({
-      curtido: !this.state.curtido 
-
+      curtido: !this.state.curtido
     })
-    if (this.state.numeroCurtidas === 0) {
-      this.setState ({
-        numeroCurtidas: this.state.numeroCurtidas + 1 
-      })
+    if(this.state.numeroCurtidas >= 1) {
+      this.setState({
+      numeroCurtidas: this.state.numeroCurtidas - 1
 
-    } else {
-      this.setState ({
-        numeroCurtidas: this.state.numeroCurtidas - 1
+      })
+    }else {
+      this.setState({
+        numeroCurtidas: this.state.numeroCurtidas + 1
       })
     }
-  }
+  } 
 
   onClickComentario = () => {
     this.setState({
@@ -73,8 +72,8 @@ class Post extends React.Component {
 
   aoEnviarComentario = () => {
     this.setState({
-      comentando: true,
-      numeroComentarios: this.state.numeroComentarios
+      comentando: false,
+      numeroComentarios: this.state.numeroComentarios + 1
     })
   }
 
@@ -85,13 +84,12 @@ class Post extends React.Component {
       iconeCurtida = iconeCoracaoPreto
     } else {
       iconeCurtida = iconeCoracaoBranco
-
     }
 
     let componenteComentario
 
     if(this.state.comentando) {
-      componenteComentario = <SecaoComentario aoEnviar={this.state.aoEnviarComentario}/>
+      componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>
     }
 
     return <PostContainer>
